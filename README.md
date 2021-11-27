@@ -3,6 +3,6 @@ https://peopletoken.xyz/
 
 ## Development
 ``` 
-cd  frontent/
+cd frontend/
 http-server
 ```
