@@ -981,7 +981,7 @@
             const req = await fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=USD&ids=constitutiondao&order=market_cap_desc&per_page=100&page=1&sparkline=false')
             const data = await req.json();
             const market = data[0];
-            document.querySelector('#price').innerHTML = `$${market.current_price}`
+            document.querySelector('#price').innerHTML = `PEOPLE: $${market.current_price}`
         }
 
         loadPrice();
