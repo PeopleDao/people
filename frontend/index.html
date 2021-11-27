@@ -212,7 +212,7 @@
             </a>
             <div class="nav-menu-holder">
                 <a href="#how-to-buy" class="nav-link buy w-nav-link">Buy</a>
-                <a href="https://snapshot.org/#/dunjia.eth" class="nav-drop-link buy w-dropdown-link">Vote</a>
+                <a href="https://snapshot.org/#/dunjia.eth" class="nav-link w-nav-link">Vote</a>
                 <a href="#community" class="nav-link more w-nav-link">Community</a>
                 <div data-hover="false" data-delay="200" class="nav-drop more w-dropdown">
                     <div class="nav-drop-toggle w-dropdown-toggle">
@@ -263,6 +263,7 @@
                             <div class="cta-btn__txt">How to Buy</div>
                             <div class="cta-btn__bg"></div>
                         </a>
+                        <a id="price" style="margin-top: 15px; margin-left: 10px"></a>
                         <!-- <a href=""
                             target="_blank" class="cta-btn-transparent hero w-inline-block">
                             <div class="cta-btn__txt">Read WoofPaper v2</div>
@@ -975,6 +976,15 @@
                 }
             }
         });
+
+        async function loadPrice() {
+            const req = await fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=USD&ids=constitutiondao&order=market_cap_desc&per_page=100&page=1&sparkline=false')
+            const data = await req.json();
+            const market = data[0];
+            document.querySelector('#price').innerHTML = `$${market.current_price}`
+        }
+
+        loadPrice();
     </script>
 </body>
 </html>
