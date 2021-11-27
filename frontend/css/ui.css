@@ -357,12 +357,14 @@ a {
   width: 468px;
   -webkit-transition: width 300ms ease;
   transition: width 300ms ease;
+  top: -260px;
+  border-radius: 50px;
 }
 
 .hero--moon {
   position: absolute;
   left: auto;
-  top: -192px;
+  top: -490px;
   right: -245px;
   bottom: auto;
   z-index: 0;
