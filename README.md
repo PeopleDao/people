@@ -1,5 +1,5 @@
 # People
-https://peopletoken.xyz/
+https://peopledao.io/
 
 ## Development
 ``` 
