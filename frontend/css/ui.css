@@ -357,14 +357,14 @@ a {
   width: 468px;
   -webkit-transition: width 300ms ease;
   transition: width 300ms ease;
-  top: -260px;
+  top: -280px;
   border-radius: 50px;
 }
 
 .hero--moon {
   position: absolute;
   left: auto;
-  top: -490px;
+  top: -510px;
   right: -245px;
   bottom: auto;
   z-index: 0;
@@ -447,7 +447,7 @@ a {
   -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  /* padding-top: 100px; */
+  padding-top: 40px;
 }
 
 .brand-url {
